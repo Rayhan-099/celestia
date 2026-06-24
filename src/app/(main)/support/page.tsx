@@ -21,9 +21,9 @@ import {
 import { Button } from "@/components/cn/button"
 import { Check } from "lucide-react"
 
-export async function generateMetadata({ params }) {
+export async function generateMetadata() {
   return {
-    title: "Pricing | Irminsul",
+    title: "Support | Pulonia",
   }
 }
 
