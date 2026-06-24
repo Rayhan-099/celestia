@@ -19,7 +19,7 @@ export default function ApiDocsPage() {
       <div className="container mx-auto px-4 py-8">
         <div className="mb-8">
           <h1 className="text-3xl font-bold text-gray-900 mb-2">
-            Irminsul API Documentation
+            Pulonia API Documentation
           </h1>
           <p className="text-gray-600">
             Interactive API documentation for Genshin Impact theorycrafting data
@@ -30,6 +30,7 @@ export default function ApiDocsPage() {
           <Suspense
             fallback={<div className="p-8 text-center">Loading...</div>}
           >
+            {/* @ts-expect-error type mismatches with React 19 / Next.js 15 */}
             <SwaggerUI
               url="/api/openapi"
               docExpansion="list"
